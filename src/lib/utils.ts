@@ -48,6 +48,6 @@ export const initialMessage: ChatGPTMessage[] = [
   {
     role: "assistant",
     content:
-      "Hi! I am your PDF assistant. Please load your pdf data into my knowledge store using the command `npm run prepare:data`. Once done you can ask any question about it !! ",
+      "Hi! I am your EUI assistant. Ask any question about EUI! Use your preferred language.",
   },
 ];
