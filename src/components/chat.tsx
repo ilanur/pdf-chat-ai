@@ -80,7 +80,8 @@ export function Chat() {
         }
 
         const text = new TextDecoder().decode(value);
-        if (text === "tokens-ended" && !tokensEnded) {
+        //if text contains "[tokens-ended]" and tokensEnded is false, set tokensEnded to true
+        if (text.includes("[tokens-ended]") && !tokensEnded) {
           tokensEnded = true;
         } else if (tokensEnded) {
           sourceDocuments = text;
